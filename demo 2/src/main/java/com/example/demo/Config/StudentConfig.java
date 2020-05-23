@@ -21,8 +21,8 @@ public class StudentConfig {
 
     @Bean(name = "previousStudents")
     public Students previousStudents(){
-        students.add(new Student(8L, "April"));
-        students.add(new Student(10L, "Cameron"));
+        students.add(new Student(20L, "January"));
+        students.add(new Student(30L, "June"));
 
         return new Students(students);
     }

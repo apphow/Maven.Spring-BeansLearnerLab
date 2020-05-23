@@ -11,11 +11,13 @@ public class ClassroomConfig {
 
     @Bean(name="currentCohort")
     public Classroom currentCohort(Instructors instructors, Students currentStudents) {
+
         return new Classroom(instructors, currentStudents);
     }
 
     @Bean(name = "previousCohort")
     public Classroom previousCohort(Instructors instructors, Students previousStudents) {
+
         return new Classroom(instructors, previousStudents);
     }
 }
