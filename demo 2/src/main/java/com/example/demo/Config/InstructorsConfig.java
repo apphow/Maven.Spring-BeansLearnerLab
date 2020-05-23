@@ -4,6 +4,7 @@ import com.example.demo.models.Instructor;
 import com.example.demo.models.Instructors;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 import java.util.ArrayList;
 
@@ -25,7 +26,7 @@ public class InstructorsConfig {
         instructors.add(new Instructor(3L, "Chris"));
         return new Instructors(instructors);
     }
-
+    @Primary
     @Bean(name = "instructors")
     public Instructors instructors(){
         instructors.add(new Instructor(8L, "Dolio"));
