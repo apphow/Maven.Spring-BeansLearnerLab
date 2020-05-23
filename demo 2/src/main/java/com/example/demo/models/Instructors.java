@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
-public class Students extends People<Student> {
+public class Instructors extends People<Instructor> {
 
 
-    public Students(List<Student> personList) {
+    public Instructors(List<Instructor> personList) {
         super(personList);
     }
 
