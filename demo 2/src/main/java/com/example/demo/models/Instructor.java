@@ -15,6 +15,7 @@ public class Instructor extends Person implements Teacher {
 
     @Override
     public void lecture(Iterable<? extends Learner> learners, double numberOfHours) {
+
         int numberOfLearners = 0;
         for(Learner learner : learners) {
             numberOfLearners++;
